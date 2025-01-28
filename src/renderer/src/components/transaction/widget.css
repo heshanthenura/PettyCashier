@@ -1,0 +1,32 @@
+.transaction-wrap {
+  border-radius: 17px 0 0 0;
+  padding: 10px;
+  border-bottom: solid 4px #f2f5f1;
+  border-right: solid 4px #f2f5f1;
+}
+
+.widget-h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-v1 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-h2 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-v2 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.expense-wrap {
+  padding: 10px;
+  border-bottom: solid 4px #f2f5f1;
+  border-right: solid 4px #f2f5f1;
+}

@@ -1,0 +1,7 @@
+.expensegraph-wrap {
+  background-color: rgb(255, 255, 255);
+  flex-grow: 1;
+  border-bottom: solid 4px #f2f5f1;
+  border-radius: 0 17px 0 0;
+  text-align: center;
+}
