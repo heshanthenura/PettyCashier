@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   build:
@@ -28,7 +26,8 @@ jobs:
 
       - name: Build Windows app
         run: npm run build:win
-
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
