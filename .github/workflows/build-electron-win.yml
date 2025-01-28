@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env: # Define global variables
+  VERSION: v1.0.0
+
 jobs:
   build:
     runs-on: windows-latest
@@ -29,18 +32,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get Version from package.json
-        id: get_version
-        run: echo "VERSION=$(node -p \"JSON.parse(require('fs').readFileSync('./package.json', 'utf8')).version\")" >> $GITHUB_ENV
-
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ env.VERSION }}
-          release_name: 'Petty Cashier v${{ env.VERSION }}'
+          tag_name: ${{ env.VERSION }}
+          release_name: 'Petty Cashier ${{ env.VERSION }}'
           draft: false
           prerelease: false
 
@@ -51,5 +50,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: dist/*.exe
-          asset_name: petty-cashier-setup-v${{ env.VERSION }}.exe
+          asset_name: petty-cashier-setup-${{ env.VERSION }}.exe
           asset_content_type: application/octet-stream
