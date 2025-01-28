@@ -32,6 +32,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: debug
+        run: ls
+
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
