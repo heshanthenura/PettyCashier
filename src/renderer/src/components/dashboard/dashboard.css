@@ -1,7 +1,7 @@
 .dashboard-wrap {
   background-color: rgb(255, 255, 255);
   width: 80svw;
-  border-radius: 17px;
+  border-radius: 17px 17px 0 0;
 }
 .widgets-wrap {
   display: flex;

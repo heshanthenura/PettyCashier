@@ -1,34 +1,36 @@
-# learn
+# 🏦 Petty Cashier App
 
-An Electron application with React and TypeScript
+A simple **Petty Cash Management** application built with **Electron** and **React**. This app allows users to **record expenses, view transactions in a table, and track spending trends with a graph**.
 
-## Recommended IDE Setup
+---
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## 📌 Features
 
-## Project Setup
+✅ **Add Expenses** – Record petty cash transactions with description, payee, category, and amount.  
+✅ **Transaction Table** – View all transactions in a structured table format.  
+✅ **Expense Graph** – A line graph visualizing your spending trends.  
+✅ **Real-time Updates** – Graph and table update automatically when new transactions are added.  
+✅ **Electron Integration** – Works as a **desktop application** with a smooth UI.
 
-### Install
+---
+
+## 🚀 Installation
+
+### 1️⃣ Clone the Repository
 
 ```bash
-$ npm install
+git clone https://github.com/yourusername/petty-cashier.git
+cd petty-cashier
 ```
 
-### Development
+### 2️⃣ Install Dependencies
 
 ```bash
-$ npm run dev
+npm install
 ```
 
-### Build
+### 3️⃣ Install Dependencies
 
 ```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
+npm run dev
 ```

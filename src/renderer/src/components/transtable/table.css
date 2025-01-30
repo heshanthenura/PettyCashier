@@ -1,0 +1,115 @@
+.table-body {
+  background-color: rgb(255, 255, 255);
+  width: 80svw;
+}
+
+.alert-overlay {
+  width: 100svw;
+  height: 100svh;
+
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.13);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-box {
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.alert-box > h1 {
+  flex-grow: 1;
+}
+.alert-box > button {
+  padding: 5px 0px;
+  width: 50px;
+}
+.add-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.add-data > input[type='text'] {
+  background-color: #f2f5f1;
+  padding: 5px;
+  border: none;
+  font-family: sans-serif;
+}
+
+.add-data > input[type='text']:focus {
+  border: none;
+  outline: none;
+}
+
+.add-data > select {
+  background-color: #f2f5f1;
+
+  padding: 4px;
+  border: none;
+  font-family: sans-serif;
+}
+
+.add-data > select:focus {
+  border: none;
+  outline: none;
+}
+
+.add-data > input[type='submit'] {
+  background-color: #f2f5f1;
+
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #d7eefc; /* Light gray for odd rows */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+.table > thead > tr > th {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+}
+
+.date-id > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.date-id > h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.table > tbody > tr > td:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.table > tbody > tr {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
